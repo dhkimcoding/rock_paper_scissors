@@ -12,3 +12,42 @@ function getComputerChoice() {
     }
     return result;
 }
+
+function getCapitalized(str) {
+    let firstLetter = str.charAt(0);
+    firstLetter = firstLetter.toUpperCase();
+    let remaining = str.slice(1);
+    return firstLetter + remaining;
+}
+
+function playRound(playerSelection, computerSelection) {
+    playerSelection = getCapitalized(playerSelection)
+    computerSelection = getCapitalized(computerSelection);
+    if (playerSelection === computerSelection) {
+        return "It's draw! " + playerSelection + " and " + computerSelection;
+    }
+    if (playerSelection === "Rock") {
+        if (computerSelection === "Paper") {
+            return "You Lose! Paper beats Rock";
+        }
+        else {
+            return "You Win! Rock beats Scissors";
+        }
+    }
+    else if (playerSelection === "Paper") {
+        if (computerSelection === "Rock") {
+            return "You Win! Paper beats Rock";
+        }
+        else {
+            return "You Lost! Scissors beats Paper";
+        }
+    }
+    else {
+        if (computerSelection === "Rock") {
+            return "You Lost! Rock beats Scissors";
+        }
+        else {
+            return "You Win! Scissors beats Paper";
+        }
+    }
+}
