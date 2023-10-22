@@ -16,7 +16,7 @@ function getComputerChoice() {
 function getCapitalized(str) {
     let firstLetter = str.charAt(0);
     firstLetter = firstLetter.toUpperCase();
-    let remaining = str.slice(1);
+    let remaining = str.slice(1).toLowerCase();
     return firstLetter + remaining;
 }
 
