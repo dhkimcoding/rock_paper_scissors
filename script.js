@@ -51,3 +51,26 @@ function playRound(playerSelection, computerSelection) {
         }
     }
 }
+
+function game() {
+    let playerSelection, computerSelection;
+    playerSelection = prompt("Which one? Rock? Paper? Scissors?")
+    computerSelection = getComputerChoice();
+    console.log(playRound(playerSelection, computerSelection));
+
+    playerSelection = prompt("Which one? Rock? Paper? Scissors?")
+    computerSelection = getComputerChoice();
+    console.log(playRound(playerSelection, computerSelection));
+
+    playerSelection = prompt("Which one? Rock? Paper? Scissors?")
+    computerSelection = getComputerChoice();
+    console.log(playRound(playerSelection, computerSelection));
+
+    playerSelection = prompt("Which one? Rock? Paper? Scissors?")
+    computerSelection = getComputerChoice();
+    console.log(playRound(playerSelection, computerSelection));
+
+    playerSelection = prompt("Which one? Rock? Paper? Scissors?")
+    computerSelection = getComputerChoice();
+    console.log(playRound(playerSelection, computerSelection));
+}
