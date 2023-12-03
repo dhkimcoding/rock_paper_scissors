@@ -64,3 +64,24 @@ function game() {
 let rockBtn = document.querySelector('#rock');
 let paperBtn = document.querySelector('#paper');
 let scissorsBtn = document.querySelector('#scissors');
+
+rockBtn.addEventListener('click', () => {
+    let playerSelection = 'Rock';
+    let computerSelection = getComputerChoice();
+    let result = playRound(playerSelection, computerSelection);
+    console.log(result);
+})
+
+paperBtn.addEventListener('click', () => {
+    let playerSelection = 'Paper';
+    let computerSelection = getComputerChoice();
+    let result = playRound(playerSelection, computerSelection);
+    console.log(result);
+})
+
+scissorsBtn.addEventListener('click', () => {
+    let playerSelection = 'Scissors';
+    let computerSelection = getComputerChoice();
+    let result = playRound(playerSelection, computerSelection);
+    console.log(result);
+})
