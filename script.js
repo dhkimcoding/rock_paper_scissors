@@ -58,19 +58,9 @@ function game() {
     computerSelection = getComputerChoice();
     console.log(playRound(playerSelection, computerSelection));
 
-    playerSelection = prompt("Which one? Rock? Paper? Scissors?")
-    computerSelection = getComputerChoice();
-    console.log(playRound(playerSelection, computerSelection));
-
-    playerSelection = prompt("Which one? Rock? Paper? Scissors?")
-    computerSelection = getComputerChoice();
-    console.log(playRound(playerSelection, computerSelection));
-
-    playerSelection = prompt("Which one? Rock? Paper? Scissors?")
-    computerSelection = getComputerChoice();
-    console.log(playRound(playerSelection, computerSelection));
-
-    playerSelection = prompt("Which one? Rock? Paper? Scissors?")
-    computerSelection = getComputerChoice();
-    console.log(playRound(playerSelection, computerSelection));
+    
 }
+
+let rockBtn = document.querySelector('#rock');
+let paperBtn = document.querySelector('#paper');
+let scissorsBtn = document.querySelector('#scissors');
